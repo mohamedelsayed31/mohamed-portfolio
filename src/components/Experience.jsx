@@ -34,6 +34,8 @@ const experiences = [
 
     companyUrl: "https://iti.gov.eg/",
     companyLinkLabel: "Visit ITI",
+
+    featured: true,
   },
 
   {
@@ -60,6 +62,8 @@ const experiences = [
 
     companyUrl: "https://www.wepco-eg.com/",
     companyLinkLabel: "Visit WEPCO",
+
+    featured: true,
   },
 
   {
@@ -200,30 +204,39 @@ const experiences = [
 function Experience() {
   return (
     <section
-      className="section experience-section"
+      className="experience-v3"
       id="experience"
     >
       <div className="container">
 
+        {/* =========================
+            HEADING
+        ========================= */}
+
         <Reveal>
-          <div className="section-heading centered">
+          <div className="experience-v3-heading">
             <span>MY JOURNEY</span>
 
-            <h2>Experience</h2>
+            <h2>
+              Experience<span>.</span>
+            </h2>
 
             <p>
-              Professional exposure across software development,
-              enterprise systems, networking, banking and
-              Oil & Gas technology.
+              Professional experience across software development,
+              enterprise systems, networking, banking and Oil & Gas
+              technology.
             </p>
           </div>
         </Reveal>
 
 
-        {/* Journey stats */}
+        {/* =========================
+            JOURNEY STATS
+        ========================= */}
 
         <Reveal>
-          <div className="experience-summary">
+          <div className="experience-stats-v3">
+
             <div>
               <strong>07</strong>
               <span>Training Experiences</span>
@@ -243,20 +256,27 @@ function Experience() {
               <strong>2024—26</strong>
               <span>Professional Journey</span>
             </div>
+
           </div>
         </Reveal>
 
 
-        {/* Experience Cards */}
+        {/* =========================
+            EXPERIENCE CARDS
+        ========================= */}
 
-        <div className="experience-company-grid">
+        <div className="experience-grid-v3">
           {experiences.map((experience, index) => (
             <Reveal
               key={`${experience.company}-${experience.date}`}
-              delay={(index % 3) * 0.07}
+              delay={(index % 3) * 0.06}
             >
               <motion.article
-                className="company-experience-card experience-card-v2"
+                className={`experience-card-v3 ${
+                  experience.featured
+                    ? "experience-featured"
+                    : ""
+                }`}
                 whileHover={{
                   y: -7,
                 }}
@@ -265,95 +285,112 @@ function Experience() {
                 }}
               >
 
-                {/* Header */}
+                {/* =====================
+                    COMPANY HEADER
+                ===================== */}
 
-                <div className="experience-card-header">
+                <div className="experience-card-head">
+
                   <motion.a
                     href={experience.companyUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="company-logo company-logo-link"
+                    className="experience-logo-v3"
                     whileHover={{
-                      scale: 1.08,
-                      rotate: 3,
+                      scale: 1.06,
+                    }}
+                    whileTap={{
+                      scale: 0.97,
                     }}
                     title={`Visit ${experience.company}`}
                   >
                     <img
                       src={experience.logo}
                       alt={`${experience.company} logo`}
+                      loading="lazy"
                     />
                   </motion.a>
 
-                  <div className="experience-heading-data">
-                    <span className="experience-date">
+
+                  <div className="experience-company">
+
+                    <span>
                       {experience.date}
                     </span>
 
-                    <a
-                      href={experience.companyUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="experience-company-name"
-                    >
+                    <h3>
                       {experience.short}
+                    </h3>
 
-                      <FiArrowUpRight />
-                    </a>
                   </div>
+
                 </div>
 
 
-                {/* Location */}
+                {/* =====================
+                    LOCATION / MODE
+                ===================== */}
 
                 <div className="experience-meta">
+
                   <span>
                     <FiMapPin />
                     {experience.location}
                   </span>
 
-                  <span className={`work-mode ${experience.mode
-                    .toLowerCase()
-                    .replace("-", "")}`}
-                  >
+                  <span>
                     <FiMonitor />
                     {experience.mode}
                   </span>
+
                 </div>
 
 
-                {/* Role */}
+                {/* =====================
+                    ROLE
+                ===================== */}
 
-                <div className="experience-role-v2">
+                <div className="experience-role-v3">
+
                   <FiBriefcase />
 
-                  <strong>
+                  <h4>
                     {experience.role}
-                  </strong>
+                  </h4>
+
                 </div>
 
 
-                {/* Description */}
+                {/* =====================
+                    DESCRIPTION
+                ===================== */}
 
-                <p className="experience-description">
+                <p className="experience-description-v3">
                   {experience.description}
                 </p>
 
 
-                {/* Skills */}
+                {/* =====================
+                    SKILLS
+                ===================== */}
 
-                <div className="experience-tech-tags">
+                <div className="experience-skills-v3">
+
                   {experience.skills.map((skill) => (
                     <span key={skill}>
                       {skill}
                     </span>
                   ))}
+
                 </div>
 
 
-                {/* Footer */}
+                {/* =====================
+                    FOOTER
+                ===================== */}
 
-                <div className="experience-card-footer-v2">
+                <div className="experience-footer-v3">
+
                   <span>
                     {experience.company}
                   </span>
@@ -363,13 +400,14 @@ function Experience() {
                     target="_blank"
                     rel="noreferrer"
                     whileHover={{
-                      x: 4,
+                      x: 3,
                     }}
                   >
                     {experience.companyLinkLabel}
 
                     <FiArrowUpRight />
                   </motion.a>
+
                 </div>
 
               </motion.article>
