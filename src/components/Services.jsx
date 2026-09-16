@@ -1,20 +1,20 @@
 import { motion } from "framer-motion";
-import {
-  FiArrowUpRight,
-  FiCode,
-  FiLayers,
-  FiCpu,
-} from "react-icons/fi";
-
+import { FiArrowUpRight } from "react-icons/fi";
 import Reveal from "./Reveal";
 
 const services = [
   {
     number: "01",
-    icon: <FiCode />,
+
     title: "Backend Development",
+
+    image: "/images/services/backend-development.png",
+
+    imagePosition: "center 38%",
+
     description:
       "Designing secure and scalable backend systems, REST APIs, authentication flows, business logic and database integrations.",
+
     technologies: [
       "ASP.NET Core",
       "EF Core",
@@ -27,10 +27,16 @@ const services = [
 
   {
     number: "02",
-    icon: <FiLayers />,
+
     title: "Full-Stack Development",
+
+    image: "/images/services/fullstack-development.png",
+
+    imagePosition: "center 35%",
+
     description:
       "Building complete web applications by combining modern user interfaces with reliable backend services and databases.",
+
     technologies: [
       "React",
       "JavaScript",
@@ -43,10 +49,16 @@ const services = [
 
   {
     number: "03",
-    icon: <FiCpu />,
+
     title: "Software Engineering",
+
+    image: "/images/services/software-engineering.png",
+
+    imagePosition: "center 40%",
+
     description:
       "Creating maintainable software using clean architecture, OOP, MVC, design principles, debugging and version control.",
+
     technologies: [
       "Clean Architecture",
       "OOP",
@@ -64,6 +76,8 @@ function Services() {
       id="services"
     >
       <div className="container">
+
+        {/* Heading */}
 
         <Reveal>
           <div className="services-premium-heading">
@@ -83,6 +97,8 @@ function Services() {
         </Reveal>
 
 
+        {/* Services */}
+
         <div className="services-premium-grid">
 
           {services.map((service, index) => (
@@ -95,69 +111,88 @@ function Services() {
                 whileHover={{
                   y: -8,
                 }}
+                transition={{
+                  duration: 0.28,
+                }}
               >
 
-                <span className="service-background-number">
-                  {service.number}
-                </span>
+                {/* Image */}
 
-                <div className="service-top">
+                <div className="service-visual">
+                  <motion.img
+                    src={service.image}
+                    alt={`${service.title} illustration`}
+                    loading="lazy"
 
-                  <span className="service-number">
+                    style={{
+                      objectPosition:
+                        service.imagePosition,
+                    }}
+
+                    whileHover={{
+                      scale: 1.035,
+                    }}
+
+                    transition={{
+                      duration: 0.45,
+                    }}
+                  />
+
+                  <div className="service-visual-overlay" />
+
+                  <span className="service-image-number">
                     {service.number}
                   </span>
-
-                  <motion.div
-                    className="service-icon-v2"
-                    whileHover={{
-                      rotate: 6,
-                      scale: 1.08,
-                    }}
-                  >
-                    {service.icon}
-                  </motion.div>
-
                 </div>
 
 
-                <div className="service-main-content">
+                {/* Content */}
 
-                  <h3>
-                    {service.title}
-                  </h3>
+                <div className="service-card-content">
 
-                  <p>
-                    {service.description}
-                  </p>
+                  <div className="service-main-content">
 
-                </div>
+                    <h3>
+                      {service.title}
+                    </h3>
+
+                    <p>
+                      {service.description}
+                    </p>
+
+                  </div>
 
 
-                <div className="service-tech-list">
+                  {/* Technologies */}
 
-                  {service.technologies.map((technology) => (
-                    <span key={technology}>
-                      {technology}
+                  <div className="service-tech-list">
+                    {service.technologies.slice(0, 5).map((technology) => (
+                      <span key={technology}>
+                        {technology}
+                      </span>
+                    ))}
+                  </div>
+
+
+                  {/* Footer */}
+
+                  <div className="service-card-bottom">
+
+                    <span>
+                      Development Capability
                     </span>
-                  ))}
 
-                </div>
+                    <motion.div
+                      className="service-arrow"
+                      whileHover={{
+                        x: 3,
+                        y: -3,
+                      }}
+                    >
+                      <FiArrowUpRight />
+                    </motion.div>
 
-
-                <div className="service-card-bottom">
-
-                  <span>
-                    Development Capability
-                  </span>
-
-                  <motion.div
-                    whileHover={{
-                      x: 4,
-                      rotate: 45,
-                    }}
-                  >
-                    <FiArrowUpRight />
-                  </motion.div>
+                  </div>
 
                 </div>
 
@@ -167,6 +202,8 @@ function Services() {
 
         </div>
 
+
+        {/* CTA */}
 
         <Reveal>
           <div className="service-bottom-banner">
