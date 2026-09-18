@@ -152,7 +152,7 @@ function Hero() {
             </motion.a>
 
             <motion.a
-              href="/Mohamed-Elsayed-CV.pdf"
+              href="/Mohamed_Elsayed_CV.pdf"
               target="_blank"
               rel="noreferrer"
               className="secondary-btn"

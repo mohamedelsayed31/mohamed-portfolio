@@ -11852,3 +11852,1654 @@ img {
     padding: 24px 20px;
   }
 }
+
+/* =====================================================
+   CERTIFICATIONS
+===================================================== */
+
+.certifications-premium-section {
+  padding: 120px 0;
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at 50% 5%,
+      rgba(8, 120, 255, 0.07),
+      transparent 30%
+    ),
+    #05070b;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.cert-premium-heading {
+  max-width: 900px;
+
+  margin:
+    0
+    auto
+    75px;
+
+  text-align: center;
+}
+
+.cert-premium-heading > span {
+  color: #087cff;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 2.8px;
+}
+
+.cert-premium-heading h2 {
+  margin: 16px 0 0;
+
+  color: #f4f6fa;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size:
+    clamp(48px, 5vw, 74px);
+
+  line-height: 1.02;
+
+  letter-spacing: -3px;
+}
+
+.cert-premium-heading h2 strong {
+  color: #477faf;
+
+  font-weight: inherit;
+}
+
+.cert-premium-heading p {
+  max-width: 760px;
+
+  margin:
+    24px
+    auto
+    0;
+
+  color: #8191a7;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =====================================================
+   SUB HEADINGS
+===================================================== */
+
+.credential-section-heading,
+.certificate-subheading {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 28px;
+}
+
+.credential-section-heading > div > span,
+.certificate-subheading > div > span {
+  color: #087cff;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.credential-section-heading h3,
+.certificate-subheading h3 {
+  margin:
+    8px
+    0
+    0;
+
+  color: #f3f6fa;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 27px;
+
+  letter-spacing: -0.8px;
+}
+
+.credential-section-heading > p,
+.certificate-subheading > p {
+  max-width: 390px;
+
+  margin: 0;
+
+  color: #718197;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   BADGES GRID
+===================================================== */
+
+.badge-showcase-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+
+  margin-bottom: 90px;
+}
+
+
+/* =====================================================
+   BADGE CARD
+===================================================== */
+
+.credential-badge-card {
+  min-height: 350px;
+
+  padding: 28px;
+
+  display: grid;
+
+  grid-template-columns:
+    190px minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 30px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  border:
+    1px solid #18304b;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0d151f,
+      #08101a
+    );
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.credential-badge-card:hover {
+  border-color:
+    rgba(8, 124, 255, 0.5);
+
+  box-shadow:
+    0 28px 70px
+    rgba(0, 0, 0, 0.3);
+}
+
+
+/* =====================================================
+   BADGE MEDIA
+===================================================== */
+
+.badge-visual {
+  width: 190px;
+  height: 220px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(255,255,255,0.04);
+
+  border-radius: 20px;
+
+  background:
+    rgba(3, 10, 18, 0.55);
+}
+
+.badge-visual img {
+  width: 100%;
+  height: 100%;
+
+  max-width: 170px;
+  max-height: 190px;
+
+  display: block;
+
+  object-fit: contain;
+
+  object-position: center;
+}
+
+
+/* Cisco badge can naturally be taller */
+.credential-badge-card.cisco
+.badge-visual img {
+  max-width: 160px;
+  max-height: 190px;
+}
+
+
+/* SAS circular badge */
+.credential-badge-card.sas
+.badge-visual img {
+  max-width: 170px;
+  max-height: 170px;
+}
+
+
+/* =====================================================
+   BADGE INFORMATION
+===================================================== */
+
+.badge-information {
+  min-width: 0;
+}
+
+.badge-label {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #5d93c9;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+.badge-information h3 {
+  margin:
+    14px
+    0
+    8px;
+
+  color: #f3f6fa;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 24px;
+
+  line-height: 1.25;
+
+  letter-spacing: -0.6px;
+}
+
+.badge-information p {
+  margin: 0;
+
+  color: #76869a;
+
+  font-size: 12px;
+}
+
+.verify-button {
+  width: fit-content;
+
+  margin-top: 22px;
+
+  padding:
+    11px
+    15px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  border:
+    1px solid #1c4776;
+
+  border-radius: 10px;
+
+  background:
+    rgba(8, 120, 255, 0.06);
+
+  color: #76aeeb;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+/* =====================================================
+   CERTIFICATES
+===================================================== */
+
+.certificates-gallery {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+.certificate-gallery-card {
+  overflow: hidden;
+
+  display: flex;
+
+  flex-direction: column;
+
+  border:
+    1px solid #17293e;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0d141e,
+      #080d14
+    );
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.certificate-gallery-card:hover {
+  border-color:
+    rgba(8, 120, 255, 0.4);
+
+  box-shadow:
+    0 25px 60px
+    rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   CERTIFICATE MEDIA
+===================================================== */
+
+.certificate-preview {
+  height: 190px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #09111b;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.05);
+}
+
+.certificate-preview > img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+.certificate-preview-overlay {
+  position: absolute;
+
+  left: 14px;
+  bottom: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding:
+    8px
+    10px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  border-radius: 9px;
+
+  background:
+    rgba(4, 10, 18, 0.75);
+
+  backdrop-filter:
+    blur(10px);
+
+  color: #b8c9db;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   PLACEHOLDER BRAND
+===================================================== */
+
+.certificate-brand-preview {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(8, 120, 255, 0.12),
+      transparent 65%
+    );
+}
+
+.certificate-brand-mark {
+  width: 75px;
+  height: 75px;
+
+  display: grid;
+
+  place-items: center;
+
+  border:
+    1px solid #245486;
+
+  border-radius: 18px;
+
+  background:
+    #0b1a2a;
+
+  color: #67a3e4;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 22px;
+
+  font-weight: 800;
+}
+
+.certificate-brand-preview > span {
+  color: #556e8a;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+
+/* =====================================================
+   CERTIFICATE CONTENT
+===================================================== */
+
+.certificate-content {
+  flex: 1;
+
+  padding:
+    22px
+    22px
+    20px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.certificate-card-meta {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+  color: #527fae;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+}
+
+.certificate-content h3 {
+  margin:
+    13px
+    0
+    8px;
+
+  color: #f0f4f8;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1.35;
+}
+
+.certificate-content > p {
+  margin: 0;
+
+  color: #75869a;
+
+  font-size: 11px;
+}
+
+.certificate-actions {
+  margin-top: auto;
+
+  padding-top: 20px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.certificate-actions a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding:
+    8px
+    10px;
+
+  border:
+    1px solid #1b395b;
+
+  border-radius: 8px;
+
+  color: #6799ce;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.certification-summary {
+  margin-top: 28px;
+
+  padding:
+    26px
+    30px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+
+  border:
+    1px solid #172c45;
+
+  border-radius: 18px;
+
+  background: #0a111a;
+}
+
+.certification-summary > div {
+  text-align: center;
+}
+
+.certification-summary strong {
+  display: block;
+
+  color: #eef4fa;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 24px;
+}
+
+.certification-summary span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #64768a;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1050px) {
+
+  .badge-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .credential-badge-card {
+    grid-template-columns:
+      190px minmax(0, 1fr);
+  }
+
+  .certificates-gallery {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .certifications-premium-section {
+    padding:
+      85px
+      0;
+  }
+
+
+  /* ---- Fix huge heading ---- */
+
+  .cert-premium-heading {
+    margin-bottom: 58px;
+  }
+
+  .cert-premium-heading h2 {
+    font-size:
+      clamp(42px, 11vw, 56px);
+
+    line-height: 1.03;
+
+    letter-spacing: -2px;
+
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .cert-premium-heading p {
+    margin-top: 20px;
+
+    padding:
+      0
+      8px;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+  }
+
+
+  /* ---- Sub headings ---- */
+
+  .credential-section-heading,
+  .certificate-subheading {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+  }
+
+  .credential-section-heading h3,
+  .certificate-subheading h3 {
+    font-size: 23px;
+  }
+
+
+  /* ---- BADGES ---- */
+
+  .badge-showcase-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    margin-bottom: 70px;
+  }
+
+  .credential-badge-card {
+    min-height: 0;
+
+    padding:
+      20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  /* THIS FIXES YOUR CURRENT HUGE IMAGE */
+
+  .badge-visual {
+    width: 100%;
+    height: 240px;
+
+    padding: 18px;
+
+    border-radius: 17px;
+  }
+
+  .badge-visual img {
+    width: 100%;
+    height: 100%;
+
+    max-width: 190px;
+    max-height: 200px;
+
+    margin: auto;
+
+    object-fit: contain;
+  }
+
+
+  /* Cisco tall badge */
+
+  .credential-badge-card.cisco
+  .badge-visual img {
+    max-width: 175px;
+    max-height: 205px;
+  }
+
+
+  /* SAS circular badge */
+
+  .credential-badge-card.sas
+  .badge-visual img {
+    max-width: 180px;
+    max-height: 180px;
+  }
+
+
+  .badge-information h3 {
+    font-size: 21px;
+  }
+
+
+  /* ---- Certificates ---- */
+
+  .certificates-gallery {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .certificate-preview {
+    height: 210px;
+  }
+
+
+  /* ---- Summary ---- */
+
+  .certification-summary {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    padding:
+      22px
+      18px;
+
+    gap: 24px 12px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 430px) {
+
+  .cert-premium-heading h2 {
+    font-size: 39px;
+
+    letter-spacing: -1.6px;
+  }
+
+  .badge-visual {
+    height: 220px;
+  }
+
+  .credential-badge-card.cisco
+  .badge-visual img {
+    max-width: 160px;
+    max-height: 185px;
+  }
+
+  .credential-badge-card.sas
+  .badge-visual img {
+    max-width: 165px;
+    max-height: 165px;
+  }
+
+  .certification-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =====================================================
+   PUBLICATIONS HEADING
+===================================================== */
+
+.research-publications-heading {
+  margin:
+    90px
+    0
+    30px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.research-publications-heading > div > span {
+  color: #087cff;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.research-publications-heading h3 {
+  margin:
+    8px
+    0
+    0;
+
+  color: #f3f6fa;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 30px;
+
+  letter-spacing: -1px;
+}
+
+.research-publications-heading > p {
+  max-width: 400px;
+
+  margin: 0;
+
+  color: #728198;
+
+  font-size: 12px;
+
+  line-height: 1.75;
+}
+
+
+/* =====================================================
+   PAPERS LIST
+===================================================== */
+
+.research-paper-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 26px;
+}
+
+
+/* =====================================================
+   PAPER CARD
+===================================================== */
+
+.research-paper-card {
+  min-height: 510px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(320px, 0.85fr)
+    minmax(0, 1.5fr);
+
+  overflow: hidden;
+
+  position: relative;
+
+  border:
+    1px solid #172b43;
+
+  border-radius: 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0d151f,
+      #080e16
+    );
+
+  box-shadow:
+    0 30px 80px
+    rgba(0, 0, 0, 0.22);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.research-paper-card:hover {
+  border-color:
+    rgba(8, 124, 255, 0.48);
+
+  box-shadow:
+    0 38px 90px
+    rgba(0, 0, 0, 0.32),
+    0 0 40px
+    rgba(8, 120, 255, 0.035);
+}
+
+
+/* =====================================================
+   PAPER PREVIEW
+===================================================== */
+
+.research-paper-media {
+  min-height: 510px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    36px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(13, 100, 210, 0.12),
+      transparent 62%
+    ),
+    #060d16;
+
+  border-right:
+    1px solid rgba(255,255,255,0.05);
+}
+
+
+.paper-document {
+  width: 245px;
+
+  position: relative;
+
+  z-index: 2;
+
+  overflow: hidden;
+
+  border-radius: 5px;
+
+  background: white;
+
+  box-shadow:
+    0 30px 70px
+    rgba(0, 0, 0, 0.55),
+    0 0 0 1px
+    rgba(255,255,255,0.08);
+
+  transform:
+    rotate(-1.5deg);
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.research-paper-card:hover
+.paper-document {
+  transform:
+    rotate(0deg)
+    scale(1.025);
+}
+
+
+.paper-document img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+}
+
+
+/* subtle bottom fade */
+
+.paper-media-gradient {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 55%,
+      rgba(4, 10, 17, 0.35)
+    );
+}
+
+
+.paper-pdf-badge {
+  position: absolute;
+
+  left: 20px;
+  bottom: 20px;
+
+  z-index: 4;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding:
+    9px
+    12px;
+
+  border:
+    1px solid rgba(70, 150, 255, 0.25);
+
+  border-radius: 10px;
+
+  background:
+    rgba(4, 12, 22, 0.78);
+
+  backdrop-filter:
+    blur(12px);
+
+  color: #82b4ea;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   PAPER CONTENT
+===================================================== */
+
+.research-paper-content {
+  padding:
+    38px
+    40px
+    32px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+
+/* =====================================================
+   META
+===================================================== */
+
+.paper-meta {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 22px;
+}
+
+
+.paper-conference,
+.paper-status {
+  min-height: 29px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding:
+    0
+    10px;
+
+  border-radius: 7px;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+}
+
+
+.paper-conference {
+  color: #72a8df;
+
+  border:
+    1px solid #1b3e66;
+
+  background:
+    rgba(8, 120, 255, 0.045);
+}
+
+
+.paper-status {
+  color: #6bcda0;
+
+  border:
+    1px solid
+    rgba(55, 184, 122, 0.18);
+
+  background:
+    rgba(55, 184, 122, 0.045);
+}
+
+
+.paper-category {
+  color: #4e83ba;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.1px;
+
+  text-transform: uppercase;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.research-paper-content h3 {
+  max-width: 800px;
+
+  margin:
+    13px
+    0
+    0;
+
+  color: #f3f6fa;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 27px;
+
+  line-height: 1.32;
+
+  letter-spacing: -0.8px;
+}
+
+
+.paper-description {
+  max-width: 750px;
+
+  margin:
+    17px
+    0
+    0;
+
+  color: #7f90a5;
+
+  font-size: 12px;
+
+  line-height: 1.85;
+}
+
+
+/* =====================================================
+   TECHNOLOGIES
+===================================================== */
+
+.paper-technologies {
+  margin-top: 22px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+
+.paper-technologies span {
+  padding:
+    7px
+    10px;
+
+  border:
+    1px solid #17385a;
+
+  border-radius: 999px;
+
+  background:
+    rgba(8, 120, 255, 0.04);
+
+  color: #6291c2;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   METRICS
+===================================================== */
+
+.paper-metrics {
+  margin-top: 27px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+
+.paper-metrics > div {
+  min-height: 78px;
+
+  padding:
+    15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(255,255,255,0.055);
+
+  border-radius: 12px;
+
+  background:
+    rgba(255,255,255,0.018);
+}
+
+
+.paper-metrics strong {
+  color: #d9e9f9;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 20px;
+
+  letter-spacing: -0.5px;
+}
+
+
+.paper-metrics span {
+  margin-top: 4px;
+
+  color: #596e85;
+
+  font-size: 8px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   ACTION
+===================================================== */
+
+.research-paper-actions {
+  margin-top: 29px;
+
+  padding-top: 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,0.055);
+}
+
+
+.paper-primary-button {
+  min-height: 43px;
+
+  padding:
+    0
+    16px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  border-radius: 10px;
+
+  background: #087cff;
+
+  color: white;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+
+.paper-format {
+  color: #516477;
+
+  font-size: 8px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   DIFFERENT PAPER ACCENTS
+===================================================== */
+
+.paper-wildfire::after {
+  content: "";
+
+  width: 300px;
+  height: 300px;
+
+  position: absolute;
+
+  right: -180px;
+  bottom: -190px;
+
+  border-radius: 50%;
+
+  background: #ff6b28;
+
+  filter: blur(90px);
+
+  opacity: 0.055;
+
+  pointer-events: none;
+}
+
+
+.paper-har::after {
+  content: "";
+
+  width: 300px;
+  height: 300px;
+
+  position: absolute;
+
+  right: -180px;
+  bottom: -190px;
+
+  border-radius: 50%;
+
+  background: #087cff;
+
+  filter: blur(90px);
+
+  opacity: 0.07;
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .research-paper-card {
+    grid-template-columns:
+      300px minmax(0, 1fr);
+  }
+
+  .research-paper-content {
+    padding:
+      32px
+      28px;
+  }
+
+  .research-paper-content h3 {
+    font-size: 23px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 760px) {
+
+  .research-publications-heading {
+    margin-top: 70px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+
+  .research-publications-heading h3 {
+    font-size: 24px;
+  }
+
+
+  .research-paper-card {
+    min-height: 0;
+
+    grid-template-columns: 1fr;
+
+    border-radius: 20px;
+  }
+
+
+  .research-paper-media {
+    min-height: 0;
+
+    height: 390px;
+
+    padding:
+      27px
+      20px;
+
+    border-right: 0;
+
+    border-bottom:
+      1px solid rgba(255,255,255,0.05);
+  }
+
+
+  .paper-document {
+    width: 205px;
+  }
+
+
+  .research-paper-content {
+    padding:
+      25px
+      20px
+      22px;
+  }
+
+
+  .research-paper-content h3 {
+    font-size: 21px;
+
+    line-height: 1.4;
+  }
+
+
+  .paper-description {
+    font-size: 11px;
+
+    line-height: 1.8;
+  }
+
+
+  .paper-metrics {
+    grid-template-columns:
+      repeat(3, 1fr);
+
+    gap: 7px;
+  }
+
+
+  .paper-metrics > div {
+    min-height: 70px;
+
+    padding:
+      11px
+      8px;
+
+    text-align: center;
+  }
+
+
+  .paper-metrics strong {
+    font-size: 16px;
+  }
+
+
+  .paper-metrics span {
+    font-size: 7px;
+  }
+
+
+  .research-paper-actions {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 430px) {
+
+  .research-paper-media {
+    height: 360px;
+  }
+
+
+  .paper-document {
+    width: 185px;
+  }
+
+
+  .paper-meta {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .paper-metrics {
+    grid-template-columns: 1fr;
+  }
+
+
+  .paper-metrics > div {
+    align-items: flex-start;
+
+    text-align: left;
+  }
+
+}
